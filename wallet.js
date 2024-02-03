@@ -82,7 +82,6 @@ switch(command[0]) {
         checkBalance();
         break;
     case 'transfer':
-        wallet = jsonFile.readFileSync('wallet.json');
         transferSol(command[1], command[2]); // Take otherPublicKey as argument 1 & Amount as argument 2
         break;
     default:
